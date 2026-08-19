@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#F5F7FA" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="58dp" android:background="#1565C0" android:gravity="center_vertical" android:padding="16dp"><TextView android:text="FiberHome HG6245F3 Control" android:textColor="#FFFFFF" android:textSize="19sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/></LinearLayout>
+<ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"><LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:text="IP Router" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/ipEdit" android:text="192.168.1.1" android:singleLine="true" android:inputType="textUri" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="Login dilakukan di halaman router. Aplikasi tidak membypass password." android:textSize="13sp" android:textColor="#555555" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/loginBtn" android:text="LOGIN / DASHBOARD ROUTER" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="Kontrol Cepat" android:textStyle="bold" android:textSize="18sp" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/wifiBtn" android:text="Wi-Fi — SSID / Password / Hide SSID" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/accountBtn" android:text="Akun — Password User / Admin" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/clientBtn" android:text="Perangkat Terhubung / DHCP" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/rebootBtn" android:text="Restart Router" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/fullBtn" android:text="Pengaturan Lengkap" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="Catatan: nama menu dapat berbeda menurut firmware ISP. Tombol cepat mencoba menemukan menu FiberHome berdasarkan teks yang tampil." android:textSize="12sp" android:textColor="#666666" android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>
+<WebView android:id="@+id/webView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>
