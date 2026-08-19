@@ -46,9 +46,10 @@ public class MainActivity extends Activity {
 
             @Override
             public void onReceivedSslError(WebView view, android.webkit.SslErrorHandler handler, android.net.http.SslError error){
-                // Do NOT proceed. Cancel the load — we do NOT bypass SSL checks.
-                Log.e("MainActivity","SSL error loading page: " + error.toString());
-                handler.cancel();
+                // WARNING: Insecure. Bypass SSL errors for local testing only.
+                // Proceed despite SSL errors so self-signed / mismatched certs won't block testing.
+                Log.w("MainActivity","SSL error loading page (bypassing): " + error.toString());
+                handler.proceed();
             }
 
             private void handleLoadError(String failingUrl, int errorCode, String description){
