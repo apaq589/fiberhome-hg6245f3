@@ -9,6 +9,7 @@
 <Button android:id="@+id/wifiBtn" android:text="Wi-Fi — SSID / Password / Hide SSID" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 <Button android:id="@+id/accountBtn" android:text="Akun — Password User / Admin" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 <Button android:id="@+id/clientBtn" android:text="Perangkat Terhubung / DHCP" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/blockBtn" android:text="Blokir Perangkat Tak Dikenal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 <Button android:id="@+id/rebootBtn" android:text="Restart Router" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 <Button android:id="@+id/fullBtn" android:text="Pengaturan Lengkap" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 <TextView android:text="Catatan: nama menu dapat berbeda menurut firmware ISP. Tombol cepat mencoba menemukan menu FiberHome berdasarkan teks yang tampil." android:textSize="12sp" android:textColor="#666666" android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
